@@ -1,6 +1,62 @@
+:root {
+  font-size: 16px;
+  --tomato: hsl(4, 100%, 67%);
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
 
 body {
-  box-sizing: border-box;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--darkSlateGrey);
+  /* border: 1px solid red; */
+}
+
+.card {
+  width: 100%;
+}
+
+.card-rigth {
+  margin-bottom: 2.5rem;
+  /* border: 1px solid red; */
+}
+
+.card-rigth img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.card-left {
+  margin: 0 1.5rem;
+}
+
+.card-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card-body {
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  line-height: 1.5rem;
+}
+
+.card-list {
+  margin: 0 0 2.5rem 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.card-list-item {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.5rem;
 }
