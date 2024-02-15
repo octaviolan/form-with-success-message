@@ -60,3 +60,48 @@ body {
   gap: 1rem;
   line-height: 1.5rem;
 }
+
+.card-form {
+  margin-bottom: 2.5rem;
+
+}
+
+.email {
+  margin-bottom: 1.5rem;
+}
+
+.email label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+.email input,
+.subscribe button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+}
+
+.email input::placeholder {
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 1px 2px var(--grey);
+}
+
+.subscribe button {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: var(--white);
+  background-color: var(--darkSlateGrey);
+}
+
+.subscribe button:active {
+  transform: scale(0.99);
+}
