@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- Sign-up form start -->
   
   <main class="card">
     <div class="card-rigth">
@@ -26,30 +25,37 @@
         <li class="card-list-item"><span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
         <li class="card-list-item"><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
       </ul>
+      <!-- Sign-up form start -->
       <form class="card-form">
         <div class="email">
           <label for="email" class="form-label">Email address</label>
           <input type="email" class="form-input" id="email" placeholder="email@company.com">
         </div>
         <div class="subscribe">
-          <button type="button" class="form-button">Subscribe to monthly newsletter</button>
+          <button type="button" class="button">Subscribe to monthly newsletter</button>
         </div>
       </form>
+      <!-- Sign-up form end -->
     </div>  
   </main>
   
-  <!-- Sign-up form end -->
 
   <!-- Success message start -->
+  <section class="modal hide">
+    <div class="modal-content">
+      <img src="./assets/images/icon-success.svg" alt="Icono de exito">
+      <h5>Thanks for subscribing!</h5>
+      <p>
+        A confirmation email has been sent to <span>ash@loremcompany.com.</span> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button type="button" class="button">Dismiss message</button>
 
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
+    </div>
+  </section>
 
   <!-- Success message end -->
   
+  <script src="js/index.js"></script>
 </body>
 </html>

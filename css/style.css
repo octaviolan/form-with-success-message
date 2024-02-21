@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: var(--darkSlateGrey);
@@ -29,7 +30,7 @@ body {
 }
 
 .card-left {
-  margin: 0 1.5rem;
+  margin: 0 1.5rem 2.5rem;
 }
 
 .card-title {
@@ -62,8 +63,7 @@ body {
 }
 
 .card-form {
-  margin-bottom: 2.5rem;
-
+  /* margin-bottom: 2.5rem; */
 }
 
 .email {
@@ -79,7 +79,7 @@ body {
 }
 
 .email input,
-.subscribe button {
+.button {
   box-sizing: border-box;
   width: 100%;
   padding: 1rem 1.5rem;
@@ -93,7 +93,7 @@ body {
   text-shadow: 0 1px 2px var(--grey);
 }
 
-.subscribe button {
+.button {
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -102,6 +102,37 @@ body {
   background-color: var(--darkSlateGrey);
 }
 
-.subscribe button:active {
+.button:active {
   transform: scale(0.99);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+
+.modal-content {
+  padding: 9.375rem 1.5rem 2.5rem 1.5rem;
+  border: 1px solid red;
+}
+
+.modal-content h5 {
+  margin: 2.5rem 0 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.modal-content p {
+  margin: 0 0 16rem 0;
+  line-height: 1.5rem;
+}
+
+.modal-content p span {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
