@@ -26,10 +26,11 @@
         <li class="card-list-item"><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
       </ul>
       <!-- Sign-up form start -->
-      <form class="card-form">
+      <form class="card-form" autocomplete="off">
         <div class="email">
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-input" id="email" placeholder="email@company.com">
+          <span class="email-invalid">Valid email required</span>
+          <input type="email" class="form-input" id="email" placeholder="email@company.com" >
         </div>
         <div class="subscribe">
           <button type="button" class="button">Subscribe to monthly newsletter</button>
@@ -41,12 +42,12 @@
   
 
   <!-- Success message start -->
-  <section class="modal hide">
+  <section class="modal">
     <div class="modal-content">
       <img src="./assets/images/icon-success.svg" alt="Icono de exito">
       <h5>Thanks for subscribing!</h5>
       <p>
-        A confirmation email has been sent to <span>ash@loremcompany.com.</span> 
+        A confirmation email has been sent to <span class="confirmation">ash@loremcompany.com.</span> 
         Please open it and click the button inside to confirm your subscription.
       </p>
       <button type="button" class="button">Dismiss message</button>

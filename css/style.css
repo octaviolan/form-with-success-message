@@ -71,26 +71,49 @@ body {
 }
 
 .email label {
-  display: block;
+  /* display: block; */
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 0.75rem;
   line-height: 1.125rem;
+ 
 }
 
-.email input,
+.email-invalid {
+  display: none;
+  float: right;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--tomato);
+  line-height: 1.125rem;
+}
+
+.email-invalid.show {
+  display: block;
+}
+
+.form-input,
 .button {
   box-sizing: border-box;
   width: 100%;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--grey);
+  outline: none;
+  background-color: var(--white);
+  color: var(--darkSlateGrey);
 }
 
-.email input::placeholder {
+.form-input::placeholder {
   font-size: 1rem;
   font-weight: bold;
   text-shadow: 0 1px 2px var(--grey);
+}
+
+.form-input.form-input-isRed {
+  border: 1px solid var(--tomato);
+  background-color: hsl(4, 100%, 67%, 15%);
+  color: var(--tomato);
 }
 
 .button {
@@ -108,6 +131,7 @@ body {
 
 .modal {
   position: absolute;
+  display: none;
   top: 0;
   width: 100%;
   height: 100%;
@@ -116,7 +140,7 @@ body {
 
 .modal-content {
   padding: 9.375rem 1.5rem 2.5rem 1.5rem;
-  border: 1px solid red;
+
 }
 
 .modal-content h5 {
@@ -133,6 +157,6 @@ body {
   font-weight: bold;
 }
 
-.hide {
-  display: none;
+.modal.show {
+  display: block;
 }
