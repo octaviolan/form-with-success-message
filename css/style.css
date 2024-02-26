@@ -1,6 +1,7 @@
 :root {
   font-size: 16px;
   --tomato: hsl(4, 100%, 67%);
+  --tomatoC: hsl(4, 100%, 67%, 15%);
   --darkSlateGrey: hsl(234, 29%, 20%);
   --charcoalGrey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
@@ -17,6 +18,7 @@ body {
 
 .card {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .card-rigth {
@@ -112,7 +114,7 @@ body {
 
 .form-input.form-input-isRed {
   border: 1px solid var(--tomato);
-  background-color: hsl(4, 100%, 67%, 15%);
+  background-color: var(--tomatoC);
   color: var(--tomato);
 }
 
@@ -140,7 +142,6 @@ body {
 
 .modal-content {
   padding: 9.375rem 1.5rem 2.5rem 1.5rem;
-
 }
 
 .modal-content h5 {
@@ -153,10 +154,60 @@ body {
   line-height: 1.5rem;
 }
 
-.modal-content p span {
+.modal .confirmation {
   font-weight: bold;
 }
 
 .modal.show {
   display: block;
+}
+
+@media screen and (min-width: 1024px){
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--charcoalGrey);
+
+  }
+
+  .card {
+    max-width: 58rem;
+    min-height: 37rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+    grid-template-rows: 37rem;
+    background-color: var(--white);
+    border-radius: 2.25rem;
+  }
+
+  .card-left {
+    display: grid;
+    place-items: center;
+    margin: 0;
+  }
+
+  .card-left > div {
+    max-width: 23.5rem;
+    max-height: 27.875rem;
+
+  }
+
+  .card-left > div h5 {
+    font-size: 3.5rem;
+  }
+  
+  .card-rigth {
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .card-rigth img {
+    display: none;
+  }
 }
