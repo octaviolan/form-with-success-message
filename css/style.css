@@ -125,6 +125,7 @@ body {
   line-height: 1.5rem;
   color: var(--white);
   background-color: var(--darkSlateGrey);
+  cursor: pointer;
 }
 
 .button:active {
@@ -209,5 +210,32 @@ body {
 
   .card-rigth img {
     display: none;
+  }
+
+  .modal {
+    /* display: grid;
+    place-items: center; */
+    background-color: var(--darkSlateGrey);
+  }
+
+  .modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 31.5rem;
+    padding: 3rem 4rem 4rem;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 2.25rem;
+  }
+
+  .modal-content h5 {
+    font-size: 4rem;
+    line-height: 3.375rem;
+  }
+
+  .modal-content p {
+    margin-bottom: 2.5rem;
   }
 }
